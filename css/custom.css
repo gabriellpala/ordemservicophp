@@ -1,0 +1,152 @@
+.card_button_title {
+	float: right;
+}
+
+
+@media only screen and (max-width: 500px) {
+	.card_button_title {
+		float: left;
+		margin-top: 5px;
+	 
+	}
+}
+
+@media only screen and (max-width: 1024px) {
+    .table_process{
+       margin:0 auto; 
+       width: 100%; 
+   }
+
+}
+
+
+.table td, .table th {
+    padding-right: 0;
+}
+.table td {
+    padding: .25rem;
+    font-size: 14px;
+}
+
+.table_resultfim td, th{
+    padding: .87rem  !important;
+}
+
+.table_result td, th{
+    padding: 1.1rem  !important;
+}
+ 
+.table th{
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    padding-left: 5px !important;
+    font-size: 15px;
+}
+
+.table_process td, .table th {
+    padding-right: 0;
+}
+
+.table_process{
+    border-collapse:collapse;
+    border-spacing:0;
+    position: relative;
+    margin:0 auto; 
+    width: 100%;
+}
+
+
+.table_process td{
+     border-style:solid;
+     border-width:0.5px;
+     overflow:hidden;
+     word-break:normal;
+     padding: .25rem;
+     font-size: 14px;
+ }
+
+ .table_process th{
+     border-style:solid;
+     border-width:0.5px;
+     font-weight:normal;
+     overflow:hidden;
+     word-break:normal;
+     padding-top: 10px !important;
+     padding-bottom: 10px !important;
+     padding-left: 5px !important;
+     font-size: 15px;
+ } 
+ 
+ .table_process .tg-7btt{
+     border-color:inherit;
+     font-weight:bold;
+     vertical-align: middle;
+     text-align:center;
+ }
+ 
+ .table_process .tg-c3ow{
+     border-color:inherit;
+     text-align:center;
+     vertical-align:top;
+ }
+ 
+ .table_process .tg-0pky{
+     border-color:inherit;
+     text-align:justify !important;
+     vertical-align:top;
+ }
+ 
+.table_process .tg-i5lt{
+    background-color:#b02121;
+    border-color:inherit;
+    font-weight:bold;
+    text-align:left;
+    vertical-align:top;
+}
+.table_process .tg-c3ow{
+    border-color:inherit;
+    text-align:center;
+    vertical-align:top;
+}
+.table_process .tg-qewn{
+    background-color:#ffff00;
+    border-color:inherit;
+    color:#cb0000;
+    font-weight:bold;
+    text-align:left;
+    vertical-align:top;
+}
+.table_process .tg-7btt{
+    border-color:inherit;
+    font-weight:bold;
+    text-align:center;
+    vertical-align:top;
+}
+.table_process .tg-qi4s{
+    background-color:#ffff00;
+    border-color:inherit;
+    font-weight:bold;
+    text-align:left;
+    vertical-align:top;
+}
+
+.table_process .tg-ev4w{
+    background-color:#40ff00;
+    border-color:inherit;
+    font-weight:bold;
+    text-align:left;
+    vertical-align:top;
+}
+.table_process .tg-0pky{
+    border-color:inherit;
+    text-align:left;
+    vertical-align:top;
+}
+
+.table_process .tg-fymr{
+    border-color:inherit;
+    font-weight:bold;
+    text-align:left;
+    vertical-align:top;
+}
+

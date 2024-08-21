@@ -9,9 +9,9 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Gerenciador de Ordem de Serviço</title>
-	
-	<link rel="shortcut icon" href="img/favicon-alvina.png" type="image/x-icon" />
+    <title>Amor de Vira-lata</title>
+
+    <link rel="shortcut icon" href="img/favicon-alvina.png" type="image/x-icon" />
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -22,7 +22,7 @@
     <!-- Custom styles for this template-->
     <link href="css/sb-admin-2.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
-	<!-- Custom styles for this page -->
+    <!-- Custom styles for this page -->
     <link href="vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
 
     <!-- Bootstrap core JavaScript-->
@@ -30,6 +30,7 @@
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
 </head>
+
 <body id="page-top">
 
     <!-- Page Wrapper -->

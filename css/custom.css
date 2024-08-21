@@ -26,6 +26,7 @@
 .table td {
     padding: .25rem;
     font-size: 14px;
+    align-content: center;
 }
 
 .table_resultfim td, th{

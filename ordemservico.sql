@@ -107,3 +107,11 @@ CREATE TABLE IF NOT EXISTS carousel_images (
         src VARCHAR(255) NOT NULL,
         alt VARCHAR(255) NOT NULL
     )
+CREATE TABLE contatos (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    email VARCHAR(100) NOT NULL,
+    telefone VARCHAR(20) NOT NULL,
+    mensagem TEXT NOT NULL,
+    data_criacao TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);

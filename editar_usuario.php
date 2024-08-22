@@ -71,5 +71,3 @@ $status = $dados["status"];
 <?php
 require_once('footer.php');
 ?>
-
-

@@ -54,23 +54,23 @@ function cadastraCliente($nome, $email, $senha, $cep, $endereco, $numero, $bairr
 
 function removeCliente($codigo) {
     $conexao = conecta_bd();
-
     mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
-
     mysqli_begin_transaction($conexao);
 
     try {
-        $query = "DELETE FROM cliente WHERE cod = '$codigo'";
-        $resultado = mysqli_query($conexao, $query);
-
+        $query = "DELETE FROM cliente WHERE cod = ?";
+        if ($stmt = mysqli_prepare($conexao, $query)) {
+            mysqli_stmt_bind_param($stmt, "i", $codigo);
+            mysqli_stmt_execute($stmt);
+            $dados = mysqli_stmt_affected_rows($stmt);
+            mysqli_stmt_close($stmt);
+        }
         mysqli_commit($conexao);
-        $dados = mysqli_affected_rows($conexao);
-
     } catch (mysqli_sql_exception $e) {
         mysqli_rollback($conexao);
 
         if ($e->getCode() == 1451) {
-            return 'FOREIGN_KEY_CONSTRAINT';
+            $dados = 'FOREIGN_KEY_CONSTRAINT';
         } else {
             throw $e;
         }

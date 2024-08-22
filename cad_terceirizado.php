@@ -133,6 +133,8 @@ require_once('sidebar.php');
 
                     <div class="card-footer text-muted" id="btn-form">
                         <div class=text-right>
+                        <button type="button" class="btn btn-secondary" onclick="preencherDadosFake()">Preencher com Dados Fake</button>
+
                             <a title="Voltar" href="terceirizado.php"><button type="button" class="btn btn-success"><i class="fas fa-arrow-circle-left"></i>&nbsp;</i>Voltar</button></a>
                             <a title="Adicionar"><button type="submit" name="updatebtn" class="btn btn-primary uptadebtn"><i class="fa fa-handshake">&nbsp;</i>Adicionar</button> </a>
                         </div>
@@ -150,3 +152,20 @@ require_once('sidebar.php');
 require_once('footer.php');
 ?>
 <script src='./api/cep/viacep.js'></script>
+
+<script>
+    function preencherDadosFake() {
+        document.getElementById('nome').value = 'João da Silva';
+        document.getElementById('email').value = 'joao.silva@example.com';
+        document.getElementById('senha').value = 'Senha123';
+        document.getElementById('confirma_senha').value = 'Senha123';
+        document.getElementById('cep').value = '12345678';
+        document.getElementById('endereco').value = 'Rua Exemplo';
+        document.getElementById('numero').value = '123';
+        document.getElementById('bairro').value = 'Centro';
+        document.getElementById('cidade').value = 'Cidade Exemplo';
+        document.getElementById('uf').value = 'SP';
+        document.getElementById('telefone').value = '(11) 91234-5678';
+        document.getElementById('status').value = '1';
+    }
+</script>

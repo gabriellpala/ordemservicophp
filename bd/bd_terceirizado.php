@@ -33,7 +33,10 @@ function listaTerceirizados(){
 function buscaTerceirizado($email) {
     $conexao = conecta_bd();
     $query = "SELECT * FROM terceirizado WHERE email='$email'";
-    return mysqli_query($conexao, $query);
+    $resultado = mysqli_query($conexao, $query);
+    $dados = mysqli_num_rows($resultado);
+
+    return $dados;
 }
 
 function cadastraTerceirizado($nome,$email,$telefone,$senha,$cep,$endereco,$numero,$bairro,$cidade,$uf,$status,$perfil,$data){

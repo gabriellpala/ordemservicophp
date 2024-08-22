@@ -38,20 +38,22 @@ function listaUsuarios(){
 function buscaUsuario($email) {
     $conexao = conecta_bd();
     $query = "SELECT * FROM usuario WHERE email='$email'";
-    return mysqli_query($conexao, $query);
+    $resultado = mysqli_query($conexao, $query);
+    $dados = mysqli_num_rows($resultado);
+
+    return $dados;
 }
 
-function cadastraUsuario ($nome,$senha,$email,$cep,$endereco,$numero,$bairro,$cidade,$uf,$perfil,$status,$data){
-   
+function cadastraUsuario($nome, $senha, $email, $cep, $endereco, $numero, $bairro, $cidade, $uf, $perfil, $status, $data) {
     $conexao = conecta_bd();
-
-    $query = "Insert Into usuario(nome,senha,email,perfil,status,data) values('$nome','$senha','$email','$cep', '$endereco', '$numero', '$bairro', '$cidade', '$uf','$perfil','$status','$data')";
+    
+    $query = "Insert Into usuario(nome, senha, email, cep, endereco, numero, bairro, cidade, uf, perfil, status, data) 
+              values('$nome', '$senha', '$email', '$cep', '$endereco', '$numero', '$bairro', '$cidade', '$uf', '$perfil', '$status', '$data')";
    
-    $resultado = mysqli_query($conexao,$query);
+    $resultado = mysqli_query($conexao, $query);
     $dados = mysqli_affected_rows($conexao);
     return $dados;
-
-}
+}   
 
 function removeUsuario($codigo) {
     $conexao = conecta_bd();

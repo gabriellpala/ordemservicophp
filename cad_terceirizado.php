@@ -85,7 +85,7 @@ require_once('sidebar.php');
                         <div class="col-sm-6">
                             <label> Endereço </label>
                             <input type="text" class="form-control form-control-user"
-                            id="endereco" name="endereco" placeholder="Endereço"  oninput="validatepassword(this)" required>
+                            id="endereco" name="endereco" placeholder="Endereço" required>
                         </div>
                     </div>
 
@@ -98,7 +98,7 @@ require_once('sidebar.php');
                         <div class="col-sm-6">
                             <label> Bairro </label>
                             <input type="text" class="form-control form-control-user"
-                            id="bairro" name="bairro" placeholder="Bairro"  oninput="validatepassword(this)" required>
+                            id="bairro" name="bairro" placeholder="Bairro" required>
                         </div>
                     </div>
 
@@ -111,7 +111,7 @@ require_once('sidebar.php');
                         <div class="col-sm-6">
                             <label> UF </label>
                             <input type="text" class="form-control form-control-user"
-                            id="uf" name="uf" placeholder="UF"  oninput="validatepassword(this)" required>
+                            id="uf" name="uf" placeholder="UF" required>
                         </div>
                     </div>
 

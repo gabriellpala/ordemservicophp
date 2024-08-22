@@ -38,7 +38,7 @@ CREATE TABLE IF NOT EXISTS `servico` (
 INSERT INTO `servico` (`cod`, `nome`, `valor`, `data`) VALUES
 	(6, 'servico1', 50, '2024-08-07');
 
-  -- Criando estrutura para tabela ordemservico.terceirizado
+-- Criando estrutura para tabela ordemservico.terceirizado
 CREATE TABLE IF NOT EXISTS `terceirizado` (
   `cod` int NOT NULL AUTO_INCREMENT,
   `nome` varchar(100) COLLATE utf8mb4_general_ci NOT NULL,
@@ -82,7 +82,7 @@ CREATE TABLE IF NOT EXISTS `usuario` (
 -- Criando dados para a tabela ordemservico.usuario:
 INSERT INTO `usuario` (`cod`, `nome`, `senha`, `email`, `cep`, `endereco`, `numero`, `bairro`, `cidade`, `uf`, `perfil`, `status`, `data`) VALUES
 	(32, 'teste', '698dc19d489c4e4db73e28a713eab07b', 'teste@gmail.com', '37750000', 'teste', '2', 'Centro', 'Machado', 'MG', 1, 1, '2024-08-06');
-  
+
 -- Criando estrutura para tabela ordemservico.ordem
 CREATE TABLE IF NOT EXISTS `ordem` (
   `cod` int NOT NULL AUTO_INCREMENT,
@@ -101,17 +101,20 @@ CREATE TABLE IF NOT EXISTS `ordem` (
   CONSTRAINT `foreign_key_cod_terceirizado` FOREIGN KEY (`cod_terceirizado`) REFERENCES `terceirizado` (`cod`)
 ) ENGINE=InnoDB AUTO_INCREMENT=28 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
-CREATE TABLE IF NOT EXISTS carousel_images (
-        id INT(11) AUTO_INCREMENT PRIMARY KEY,
-        name VARCHAR(255) NOT NULL,
-        src VARCHAR(255) NOT NULL,
-        alt VARCHAR(255) NOT NULL
-    )
-CREATE TABLE contatos (
+-- Criando estrutura para tabela ordemservico.carousel_images
+CREATE TABLE IF NOT EXISTS `carousel` (
+    id INT(11) AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    src VARCHAR(255) NOT NULL,
+    alt VARCHAR(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- Criando estrutura para tabela ordemservico.contatos
+CREATE TABLE IF NOT EXISTS `contatos` (
     id INT AUTO_INCREMENT PRIMARY KEY,
     nome VARCHAR(100) NOT NULL,
     email VARCHAR(100) NOT NULL,
     telefone VARCHAR(20) NOT NULL,
     mensagem TEXT NOT NULL,
     data_criacao TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-);
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;

@@ -43,7 +43,7 @@
         <li class="nav-item active">
             <a class="nav-link" href="terceirizado.php">
                 <i class="fa fa-handshake"></i>
-                <span>Terceirizados</span></a>
+                <span>Voluntários</span></a>
         </li>
 
         <!-- Divider -->
@@ -52,7 +52,7 @@
         <li class="nav-item active">
             <a class="nav-link" href="servico.php">
                 <i class="fas fa-fw fa-wrench"></i>
-                <span>Serviços</span></a>
+                <span>Atividades</span></a>
         </li>
 
         <!-- Divider -->
@@ -61,7 +61,7 @@
         <li class="nav-item active">
             <a class="nav-link" href="ordem.php">
                 <i class="fas fa-fw fa-clipboard-list"></i>
-                <span>Gerar Ordem de Serviço</span></a>
+                <span>Gerar Atividades</span></a>
         </li>
         <hr class="sidebar-divider my-0">
         <!-- Nav Item - Dashboard -->
